@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <!--Style-->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
   <header>
@@ -115,6 +115,7 @@
           <ul class="format-list">
             <li class="format-item">
               <article class="format-card">
+                <img src="images/walrus.jpg" alt="Walrus" class="format-img">
                 <h3 lang="en" class="format-tittle">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -126,6 +127,7 @@
             </li>
             <li class="format-item">
               <article class="format-card">
+                <img src="images/horseshoe.jpg" alt="Horseshoe" class="format-img">
                 <h3 lang="en" class="format-tittle">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -137,6 +139,7 @@
             </li>
             <li class="format-item">
               <article class="format-card">
+                <img src="images/handlebar.jpg" alt="Handlebar" class="format-img">
                 <h3 lang="en" class="format-tittle">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -161,20 +164,20 @@
           <div class="contact-form">
             <h2 class="contact-title section-tittle">Приєднуйся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <form name="contact-form" autocomplete="off" novalidate class="form">
+            <form name="contact-form" autocomplete="off" class="form">
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я">
+                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
               </div>
             
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон">
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^/+[0-9]{12}" placeholder="Телефон" required>
               </div>
             
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-name">Електронна пошта</label>
-                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта">
+                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" required>
               </div>
             
               <button type="submit" class="form-button button">Замовити дзвінок</button>
@@ -216,13 +219,11 @@
             <li><a class="address-link" href="https://maps.app.goo.gl/HXGMrZPrCiJ5rCGdA">Україна, м. Київ, вул. Січових
                 Стрільців 54</a></li>
             <li><a href="#">
-                <!--facebook icon-->
                 <svg class="address-icon" width="32px" height="32px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a></li>
             <li><a href="#">
-                <!--instagram icon-->
                 <svg class="address-icon" width="32px" height="32px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
@@ -242,20 +243,20 @@
       <button type="button" class="modal-btn-close">Close</button>
       <h2 class="modal-title">Замовити дзвінок</h2>
       <p class="modal-subtitle">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-      <form name="modal-form" autocomplete="off" novalidate class="form">
+      <form name="modal-form" autocomplete="off" class="form">
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я">
+          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
         </div>
 
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон">  
+            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" pattern="^/+[0-9]{12}" required>  
           </div>
 
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">Електронна пошта</label>
-            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта">  
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" required>  
           </div>
 
           <button type="submit" class="form-button button">Замовити дзвінок</button>

@@ -1,0 +1,70 @@
+.footer {
+  position: relative;
+  background-image: url('../images/footer.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu,
+.address-info,
+.address-list {
+  flex-grow: 1;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-copyright {
+  font-size: 14px;
+  color: var(--color-copy);
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url("../images/kiit-bread-small.png");
+  width: 180px;
+  height: 122px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url("../images/kit-bread-big.png");
+  width: 380px;
+  height: 189px;
+  right: 0;
+}
